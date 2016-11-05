@@ -1,0 +1,30 @@
+{
+  "name": "patchwork-builder",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pack": "build --dir -ml",
+    "update": "cd app && git pull && npm install",
+    "release": "build -ml",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "org.ssbc.patchwork",
+    "npmSkipBuildFromSource": true,
+    "npmArgs": ["--abi=50"],
+    "dmg": {
+      "icon": "build/dmg-icon.icns"
+    },
+    "mac": {},
+    "linux": {
+      "category": "Network"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-builder": "github:mmckegg/electron-builder#rebuild-for-platform",
+    "electron": "^1.4.3"
+  }
+}
