@@ -35,9 +35,14 @@
     },
     "linux": {
       "category": "Network"
+    },
+    "windows": {
+      "icon": "build/icon.ico",
+      "target": "squirrel",
+      "publisherName": "Secure Scuttlebutt Consortium"
     }
   },
-  "author": "",
+  "author": "Secure Scuttlebutt Consortium",
   "license": "ISC",
   "devDependencies": {
     "electron-builder": "^15.5.1",
