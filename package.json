@@ -36,7 +36,7 @@
     "linux": {
       "category": "Network"
     },
-    "windows": {
+    "win": {
       "icon": "build/icon.ico",
       "target": "squirrel",
       "publisherName": "Secure Scuttlebutt Consortium"
