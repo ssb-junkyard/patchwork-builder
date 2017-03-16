@@ -45,7 +45,8 @@
   "author": "Secure Scuttlebutt Consortium",
   "license": "ISC",
   "devDependencies": {
+    "electron": "~1.4.3",
     "electron-builder": "^15.5.1",
-    "electron": "~1.4.3"
+    "electron-builder-squirrel-windows": "^15.5.1"
   }
 }
