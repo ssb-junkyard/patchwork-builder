@@ -4,19 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pack": "build --dir -ml",
+    "pack": "build --dir -m",
     "update": "cd app && git pull && npm install",
-    "release": "build -ml",
+    "release": "build -m",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "build": {
     "appId": "org.ssbc.patchwork",
     "npmSkipBuildFromSource": true,
     "npmArgs": ["--abi=50"],
+    "files": [
+      "**/*",
+      "!node_modules/**/deps${/*}"
+    ],
     "dmg": {
       "icon": "build/dmg-icon.icns"
     },
-    "mac": {},
+    "mac": {
+      "icon": "build/icon.icns"
+    },
     "linux": {
       "category": "Network"
     }
@@ -24,7 +30,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron-builder": "github:mmckegg/electron-builder#rebuild-for-platform",
-    "electron": "^1.4.3"
+    "electron-builder": "~15.4.3",
+    "electron": "~1.4.3"
   }
 }
