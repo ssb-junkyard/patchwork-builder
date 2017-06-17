@@ -43,8 +43,11 @@
       "category": "Network"
     },
     "win": {
-      "icon": "build/setup-icon.ico",
+      "icon": "build/icon.ico",
       "publisherName": "Secure Scuttlebutt Consortium"
+    },
+    "nsis": {
+      "installerIcon": "build/setup-icon.ico"
     }
   },
   "author": "Secure Scuttlebutt Consortium",
