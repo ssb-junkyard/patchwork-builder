@@ -49,7 +49,11 @@
     },
     "win": {
       "icon": "build/icon.ico",
-      "publisherName": "Secure Scuttlebutt Consortium"
+      "publisherName": "Secure Scuttlebutt Consortium",
+      "files": [
+        "node_modules/sodium-native/prebuilds/win32-${arch}/electron-50.node",
+        "node_modules/sodium-native/prebuilds/win32-${arch}/libsodium.*"
+      ]
     },
     "nsis": {
       "installerIcon": "build/setup-icon.ico"
