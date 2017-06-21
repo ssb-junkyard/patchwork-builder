@@ -1,6 +1,9 @@
 #!/bin/sh
 
-CWD="$(pwd)"
+SOURCE=$1
+TARGET=$2
+
 # cp -r "${CWD}/app" "${CWD}/package"
-rsync -aP app/ package --exclude node_modules
-node ./bin/package.js package
+rsync -aP ${SOURCE}/ ${TARGET} --exclude node_modules
+
+node ./bin/package.js ${TARGET}

@@ -10,7 +10,7 @@
     "pack:linux": "build --dir -l",
     "pack:windows": "build --dir -w",
     "update": "cd app && git pull && npm install",
-    "package": "bin/package package",
+    "package": "bin/package app package",
     "release": "build",
     "release:all": "build -mlw",
     "release:mac": "build -m",

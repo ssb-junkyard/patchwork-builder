@@ -5,7 +5,7 @@ const path = process.argv[2] || process.cwd()
 
 addElectronDepFromDevDep(path)
 
-function addElectronDepFromDevDep (pkgPath) {
+function addElectronDepFromDevDep (path) {
   const pkgPath = join(path, 'package.json')
   const pkgFile = readFileSync(pkgPath)
   const pkg = JSON.parse(pkgFile)
