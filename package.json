@@ -24,14 +24,14 @@
     ],
     "npmSkipBuildFromSource": true,
     "npmArgs": [
-      "--abi=50"
+      "--abi=53"
     ],
     "files": [
       "**/*",
       "!node_modules/**/deps${/*}",
       "!node_modules/**/_node_modules${/*}",
       "!node_modules/sodium-native/prebuilds${/*}",
-      "node_modules/sodium-native/prebuilds/${os}-${arch}/electron-50.node",
+      "node_modules/sodium-native/prebuilds/${os}-${arch}/electron-53.node",
       "node_modules/sodium-native/prebuilds/${os}-${arch}/libsodium.*"
     ],
     "dmg": {
@@ -40,7 +40,7 @@
     "mac": {
       "icon": "build/icon.icns",
       "files": [
-        "node_modules/sodium-native/prebuilds/darwin-${arch}/electron-50.node",
+        "node_modules/sodium-native/prebuilds/darwin-${arch}/electron-53.node",
         "node_modules/sodium-native/prebuilds/darwin-${arch}/libsodium.*"
       ]
     },
@@ -62,7 +62,7 @@
   "author": "Secure Scuttlebutt Consortium",
   "license": "ISC",
   "devDependencies": {
-    "electron": "~1.4.3",
+    "electron": "~1.6.11",
     "electron-builder": "^19.4.2"
   },
   "dependencies": {
