@@ -63,6 +63,6 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "~1.8.1",
-    "electron-builder": "^19.33.0"
+    "electron-builder": "^19.43.4"
   }
 }
