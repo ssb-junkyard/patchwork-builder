@@ -72,7 +72,7 @@
   "author": "Secure Scuttlebutt Consortium",
   "license": "ISC",
   "devDependencies": {
-    "electron": "~2.0.3",
+    "electron": "~2.0.13",
     "electron-builder": "^19.46.9"
   }
 }
